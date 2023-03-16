@@ -6,8 +6,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var controller =
-        context.dependOnInheritedWidgetOfExactType<HomeControler>()!;
+    var controller = HomeControler.of(context);
+    var size = MediaQuery.of(context).size;
+    var navigation = Navigator.of(context);
+    var theme = Theme.of(context);
 
     return Scaffold(
       appBar: AppBar(
