@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:inmind/src/controllers/homecontroller.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   State<HomePage> createState() {
     return _HomePageState();
